@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS WORD</title>
+   <link rel="stylesheet" href="css/all.min.css">
+   <!-- <link rel="stylesheet" href="C:\Users\Manoj\Desktop\web development\ducat\JavaScript\css\all_min.css"> -->
+   <style>
+       *{margin: 0;padding: 0;box-sizing: border-box;}
+       .fl{float: left;}
+        .fr{float: right;}
+            .new{float: left;  margin-left: 1%;}
+       .top_section{
+           height:140px;
+           width:100%;
+           margin: auto;
+           background-color: #08a4f8;
+       }
+       
+       .nav{
+           height:30px;
+           width: 100%;
+           background-color:#81cdf7;
+       }
+       .nav ul li{
+           list-style: none;
+           display: inline;
+           font-size: 14px;
+           margin-left: 3%;
+       }
+       .text_size_style{
+        float: left;
+           height:110px;
+           width:16.5%;
+           background-color:#08a4f8;
+           margin-left: 2.5%;
+           padding-top:1%;
+           padding-left:0.5%;
+       }
+       .font_select{
+           height:24px;
+           font-size: 12px;
+           width:150px;
+          
+       }
+       .num_sel{
+        height:24px;
+           font-size: 10px;
+           width:45px;
+       }
+       .text_style_logo{
+           margin-top: 5%;
+           padding-left:0.5%;
+       }
+       .text_style_logo i{
+        font-size: 16px;
+        margin-left: 8px;
+       }
+       .name_font{
+            margin-top: 10px;    
+            text-align: center;
+       }
+      
+       .text_transformation
+       {
+           position: absolute;
+           background-color: whitesmoke;
+            width:10%;
+           left:16%;
+           top:18%;
+           padding:1%;
+           display: none;
+       }
+       .text_transformation ol li
+       {
+        list-style: none;
+        margin:2%;
+       }
+       /* .text_transformation i
+       {
+        color: red;
+        float: right;
+        right:10%;
+      
+    } */
+    .color{
+        height:110px;
+           width:12.5%;
+           background-color: #08a4f8;
+           float: left;
+       }
+    .text_colr{
+        height:70px;
+        width:50%;
+        background-color: #08a4f8;
+        float: left;
+        vertical-align: middle;
+        text-align:center;
+        padding-top:10%;
+        font-size: 15px;
+    }
+    .back_colr{
+        height:70px;
+        width:50%;
+        background-color: #08a4f8;
+        float: right;
+        text-align:center;
+        padding-top:10%;
+        font-size: 15px;
+    }
+    .text_colr_box{
+        position: absolute;
+           background-color:#08a4f8;
+           height:170px;
+            width:11%;
+           left:17%;
+           top:27%;
+           padding:1%;
+           padding-top: 0%;
+           display: none;
+           z-index: +1;
+           /* border:1px solid black */
+
+        }
+        .small_boxes{
+            height:20px;
+            width: 20px;
+            margin-left: 2%;
+            /* background-color: aqua; */
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+        .no_color{
+            height:20px;
+            width:95%;
+            margin: auto;
+            background-color: white;
+            margin-top: 5%;
+            /* vertical-align: middle; */
+            font-size: 17px;
+        }
+        .bg_colr_box{
+        position: absolute;
+           background-color: #08a4f8;
+           height:240px;
+            width:12%;
+           left:27%;
+           top:27%;
+           padding:1%;
+           padding-top: 0%;
+           display: none;
+
+        }
+        .small_boxes1{
+            height:28px;
+            width: 31px;
+            margin-left: 2%;
+            background-color: aqua;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+        /*  workspace */
+        .workspace{
+            height:73vh;
+            width:60%;
+            margin: auto;
+            background-color:whitesmoke;
+            border: 1px solid grey;
+            margin-top: 1%;
+            text-align: left;
+            vertical-align: top;
+            padding:3%;
+        }
+        /* .workspace input{
+            width:100%;
+            height:75vh;
+            background-color: whitesmoke;
+            padding-bottom: 70vh;
+        } */
+        .text_Align_indent{
+        
+            height:110px;
+           width:16%;
+           background-color: rgb(5, 165, 228);
+           float: left;
+        }
+        /* line height and align and letter spacing */
+        .line_ht
+        {
+            /* position: absolute; */
+            float: left;
+            height:50px;
+            width:122px;
+            background-color: #08a4f8;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 15px;
+        }
+        .letter_spacing{
+            /* position: absolute; */
+            float: left;
+            height:50px;
+            width:123px;
+            background-color: #08a4f8;
+            text-align: center;
+            padding-top: 5px;
+            font-size: 15px;
+        }
+        .align{
+            height:55px;
+            width:250px;
+            float: left;
+            background-color: #08a4f8;
+            text-align: center;
+            margin-top: 1%;
+            padding-top: 5px;
+        }
+        .align i{
+            margin:3%;
+        }
+     /* text style */
+     .text_style{
+         float: left;
+         height:110px;
+         width:50%;
+         background-color: #08a4f8;
+     }
+      
+     .box3{
+            float: left;
+            height:70px;
+            width:130px;
+            background-color:#81cdf7;
+            margin:2px;
+            font-size: 25px;
+            text-align: center;
+     }
+     i{cursor: pointer;}
+   </style>
+</head>
+<body style="background-color: #bedae9;">
+    <p style="text-align: center; font-size: 20px; background-color: whitesmoke;">Document MS WORD</p>
+    <!--  top section -->
+  <div class="top_section">
+      <!--  nav section -->
+      <div class="nav">
+          <ul>
+              <li style="margin-left: 5%;">Home</li>
+              <li>Insert</li>
+              <li>Page Layout</li>
+              <li>Referrences</li>
+              <li>Mailing</li>
+              <li>Review</li>
+              <li>view</li>
+              <li onclick="document.getElementById('change').style.text.fontWeight='nnormal'">Make Text Normal </li>
+          </ul>
+      </div>
+      <!-- text style section -->
+      <div class="text_size_style" >
+          <select class="font_select" name="font" id="font">
+              <option value="sansarif" onclick="document.getElementById('change').style.fontFamily='san-serif'">Sansarif</option>
+              <option value="sansarif" onclick="document.getElementById('change').style.fontFamily='monospace'">monospace</option>
+              <option value="sansarif" onclick="document.getElementById('change').style.fontFamily='cursive'">cursive</option>
+              <option value="sansarif" onclick="document.getElementById('change').style.fontFamily='serif'">serif</option>
+              <option value="sansarif" onclick="document.getElementById('change').style.fontFamily='fantasy'">fantasy</option>
+              <option value="sansarif" onclick="document.getElementById('change').style.fontFamily='italic'">italic</option>
+            
+          </select>
+          <select class="num_sel"name="font" id="font">
+            <option  onclick="document.getElementById('change').style.fontSize(10)">10</option>
+            <option  onclick="document.getElementById('change').style.fontSize(12)">12</option>
+            <option  onclick="document.getElementById('change').style.fontSize='14px'">14</option>
+            <option  onclick="document.getElementById('change').style.fontSize='16'">16</option>
+            <option  onclick="document.getElementById('change').style.fontSize='18'">18</option>
+            <option  onclick="document.getElementById('change').style.fontSize='20'">20</option>
+            <option  onclick="document.getElementById('change').style.fontSize='22'">22</option>
+            <option  onclick="document.getElementById('change').style.fontSize='24'">24</option>
+        </select>
+        <div class="text_style_logo" >
+            <i class="fas fa-bold " onclick="document.getElementById('change').style.fontWeight='bold'"></i>
+            <i class="fas fa-italic" onclick="document.getElementById('change').style.fontStyle='italic'"></i>
+            <i class="fas fa-underline" onclick="document.getElementById('change').style.textDecoration='underline'"></i>
+            <strike style="margin-left: 10px;" onclick="document.getElementById('change').style.display='strike'">abc</strike>
+          <span style="margin-left: 8px;" onclick="document.getElementById('transform').style.display='block'">Aa</span>
+        </div>
+        <div class="name_font">
+            Font
+        </div>
+        <div  id ="transform"class="text_transformation">
+            <ol>
+                <i class="fas fa-times" onclick="document.getElementById('transform').style.display=('none')"></i>
+                <li  onclick="document.getElementById('change').style.textTransform='uppercase'">uppercase</li>
+                <li  onclick="document.getElementById('change').style.textTransform='lowercase'">LoweCase</li>
+                <li  onclick="document.getElementById('change').style.textTransform='captitalise'">Capitatlise</li>
+            </ol>
+        </div>
+      </div>
+      <!-- text color  section -->
+      <div class="color">
+        <div class="text_colr">
+            <i class="fas fa-eye-dropper fa-2x" onclick="document.getElementById('t_colr').style.display='block'"></i>
+            <br><br><br>
+            Text color
+        </div> 
+        <div class="back_colr">
+            <i class="fas fa-fill fa-2x"  onclick="document.getElementById('bg_colr').style.display='block'"></i>
+            <br><br><br>
+            BG color
+          
+            <div id="t_colr" class="text_colr_box">
+                <i class="fas fa-times"  onclick="document.getElementById('t_colr').style.display='none'"></i>
+                <br>
+                <div style="background-color: blue;" class="small_boxes fl" onclick="document.getElementById('change').style.color='blue'"></div>
+                <div  style="background-color:aqua;"class="small_boxes new" onclick="document.getElementById('change').style.color='aqua'"></div>
+                <div style="background-color:green;"class="small_boxes new" onclick="document.getElementById('change').style.color='green'"></div>
+                <div style="background-color: yellow;" class="small_boxes new" onclick="document.getElementById('change').style.color='yellow'"></div>
+                <div style="background-color: grey;" class="small_boxes new" onclick="document.getElementById('change').style.color='grey'"></div>
+                <div style="background-color:teal;" class="small_boxes new " onclick="document.getElementById('change').style.color='teal'"></div>
+                <div style="background-color:#666600;" class="small_boxes new" onclick="document.getElementById('change').style.color='#666600'"></div>
+                <div style="background-color: #de6262;" class="small_boxes new" onclick="document.getElementById('change').style.color='#de6262'"></div>
+                <div style="background-color: #cbad6d;" class="small_boxes new" onclick="document.getElementById('change').style.color='#cbad6d'"></div>
+                <div style="background-color: #d53369;" class="small_boxes new" onclick="document.getElementById('change').style.color='#d53369'"></div>
+                <div style="background-color: #f857a6;" class="small_boxes new" onclick="document.getElementById('change').style.color='#f857a6'"></div>
+                <div style="background-color: #4b6cb7;" class="small_boxes new" onclick="document.getElementById('change').style.color='#4b6cb7'"></div>
+                <div style="background-color: #ff5858;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ff5858'"></div>
+                <div style="background-color: #0abfbc;" class="small_boxes new" onclick="document.getElementById('change').style.color='#0abfbc'"></div>
+                <div style="background-color: #480048;" class="small_boxes new" onclick="document.getElementById('change').style.color='#480048'"></div>
+                <div style="background-color: #49a09d;" class="small_boxes new" onclick="document.getElementById('change').style.color='#49a09d'"></div>
+                <div style="background-color: #d6a4a4;" class="small_boxes new" onclick="document.getElementById('change').style.color='#d6a4a4'"></div>
+                <div style="background-color: #ffedbc;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ffedbc'"></div>
+                <div style="background-color: #dc2424;" class="small_boxes new" onclick="document.getElementById('change').style.color='#dc2424'"></div>
+                <div style="background-color: #24c6dc;" class="small_boxes new" onclick="document.getElementById('change').style.color='#24c6dc'"></div>
+                <div style="background-color: #283048;" class="small_boxes new" onclick="document.getElementById('change').style.color='#283048'"></div>
+                <div style="background-color: #ffe47a;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ffe47a'"></div>
+                <div style="background-color: #5c258d;" class="small_boxes new" onclick="document.getElementById('change').style.color='#5c258d'"></div>
+                <div style="background-color: #71b280;" class="small_boxes new" onclick="document.getElementById('change').style.color='#71b280'"></div>
+                <div style="background-color: #134e5e;" class="small_boxes new" onclick="document.getElementById('change').style.color='#134e5e'"></div>
+                <!-- <div style="background-color: #3a6073;" class="small_boxes new" onclick="document.getElementById('change').style.color='#3a6073'"></div>
+                <div style="background-color: #ff8008;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ff8008'"></div>
+                <div style="background-color: #dd5289;" class="small_boxes new" onclick="document.getElementById('change').style.color='#dd5289'"></div> -->
+                <!-- <div class="small_boxes fr"></div> -->
+                <div class="no_color fl" onclick="document.getElementById('change').style.color='black'">No Color</div>
+            </div>
+            <div  id="bg_colr"class="bg_colr_box">
+                <i class="fas fa-times" onclick="document.getElementById('bg_colr').style.display='none'"></i>
+                <br>
+                <div style="background-color: blue;" class="small_boxes1 fl" onclick="document.getElementById('change').style.backgroundColor='blue'"></div>
+                <div  style="background-color:aqua;"class="small_boxes1 new" onclick="document.getElementById('change').style.color='aqua'"></div>
+                <div style="background-color:green;"class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='green'"></div>
+                <div style="background-color: yellow;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='yellow'"></div>
+                <div style="background-color: grey;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='grey'"></div>
+                <div style="background-color:teal;" class="small_boxes1 new " onclick="document.getElementById('change').style.backgroundColor='teal'"></div>
+                <div style="background-color:#666600;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#666600'"></div>
+                <div style="background-color: #de6262;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#de6262'"></div>
+                <div style="background-color: #cbad6d;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#cbad6d'"></div>
+                <div style="background-color: #d53369;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#d53369'"></div>
+                <div style="background-color: #f857a6;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#f857a6'"></div>
+                <div style="background-color: #4b6cb7;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#4b6cb7'"></div>
+                <div style="background-color: #ff5858;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#ff5858'"></div>
+                <div style="background-color: #0abfbc;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#0abfbc'"></div>
+                <div style="background-color: #480048;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#480048'"></div>
+                <div style="background-color: #49a09d;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#49a09d'"></div>
+                <div style="background-color: #d6a4a4;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#d6a4a4'"></div>
+                <div style="background-color: #ffedbc;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#ffedbc'"></div>
+                <div style="background-color: #dc2424;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#dc2424'"></div>
+                <div style="background-color: #24c6dc;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#24c6dc'"></div>
+                <div style="background-color: #283048;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#283048'"></div>
+                <div style="background-color: #ffe47a;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#ffe47a'"></div>
+                <div style="background-color: #5c258d;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#5c258d'"></div>
+                <div style="background-color: #71b280;" class="small_boxes1 new" onclick="document.getElementById('change').style.backgroundColor='#71b280'"></div>
+               
+                <div class="no_color fl" onclick="document.getElementById('change').style.backgroundColor='whitesmoke'">No Color</div>
+            </div>
+        </div>
+      </div>
+        <!-- text align and indent section -->
+  <div class="text_Align_indent">
+         <div class="line_ht">
+             <i class="fas fa-arrows-alt-v"></i>
+             <i class="fas fa-bars"></i>
+             <select name="" id="">
+                <option value="">0</option>
+                <option value="1">1px</option>
+                <option value="2">2px</option>
+                <option value="3">3px</option>
+                <option value="4">4px</option>
+                <option value="5">5px</option>
+                <option value="6">6px</option>
+                <option value="7">7px</option>
+                <option value="8">8px</option>
+               </select>
+               <br>
+               Line Height
+         </div>
+        <div class="letter_spacing">
+          <i class="fas fa-arrows-alt-h"></i>
+            <select name="" id="">
+                <option value="0">0</option>
+                <option value="1">1px</option>
+                <option value="2">2px</option>
+                <option value="3">3px</option>
+                <option value="4">4px</option>
+                <option value="5">5px</option>
+                <option value="6">6px</option>
+                <option value="7">7px</option>
+                <option value="8">8px</option>
+               </select><br>
+              Letter Spacing
+        </div>
+        <div class="clr"></div>
+        <div class="align">
+            <i class=" fas fa-align-left" onclick="document.getElementById('change').style.textAlign='left'"></i>
+            <i class=" fas fa-align-right" onclick="document.getElementById('change').style.textAlign='right'"></i>
+            <i class=" fas fa-align-center" onclick="document.getElementById('change').style.textAlign='center'" ></i>
+            <i class=" fas fa-align-justify" onclick="document.getElementById('change').style.textAlign='Justify'" style="cursor: pointer;"></i>
+            <br>
+           <p style="font-size: 15px;">Text Align</p>
+           
+        </div>
+  </div>
+  <!-- text style -->
+     <div class="text_style">
+         <div class="box3"><p>AaBbCcDd </p><span style="font-size: 19px;"> Normal(serif)</span></div>
+         <div class="box3"> <p style="font-family:cursive;">AaBbCcDd </p><span style="font-size: 19px;"> Cursive</span></div>
+         <div class="box3"> <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif">AaBbCcDd</p><span style="font-size: 19px;"> Sans-serif</span></div>
+         <div class="box3"> <p style="font-family:monospace">AaBbCcDd</p><span style="font-size: 19px;"> Monospace</span></div>
+         <div class="box3"> <p style="font-family:fantasy">AaBbCcDd</p><span style="font-size: 19px;"> Fantasy</span></div>
+        <p style="text-align: center;">Text Style</p>
+     </div>
+</div>
+     
+  <!-- top section end -->
+  <!--  workspace -->
+  <div class="workspace">  
+      <p id="change">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, ex quis! Facere, officia nobis adipisci modi magni ea reiciendis ad a at ipsa recusandae accusantium quibusdam fuga magnam suscipit explicabo voluptatibus cum eos fugit dolore. Dolores consequuntur ullam non minima. At facere, minus aspernatur totam cupiditate alias nemo distinctio quasi voluptatem quo, facilis rem temporibus quam accusantium dolorum? Saepe, reprehenderit quos? Non, repudiandae, voluptate eius inventore consequuntur maiores, excepturi officiis vitae totam aspernatur ut recusandae culpa possimus velit alias atque!</p> 
+  </div>
+ 
+</html>

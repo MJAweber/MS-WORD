@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Emulator</title>
+    <style>
+        .fl{float: left;}
+        .fr{float: right;}
+            .new{float: left;  margin-left: 1%;}
+        hr{
+            width: 90%;
+            margin: auto;
+            border: 2px solid black;
+        }
+        .section{
+            height:70px;
+            width: 90%;
+            margin: auto;
+        }
+        .paint_box{
+            position: absolute;
+            height:94px;
+            width:170px;
+            /* background-color: red; */
+            padding:2%;
+            left: 5%;
+            bottom: 8%;
+
+        }
+        .small_boxes{
+            height:20px;
+            width: 20px;
+            margin-left: 2%;
+            background-color: aqua;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+        /*  */
+    .card_section{
+    height: 200px;
+    width:94%;
+    margin: auto;        
+    margin-top: 1%;
+    /* background-color: red; */
+    padding-left:3%;
+}
+.courses_card{
+    float: left;
+    height:170px;
+    width:200px;
+    /* background-color:rgb(17, 219, 17); */
+   border-bottom: 2px solid black;
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    position: relative;
+}
+.courses_card a{
+    text-decoration: none;
+    display: block;
+    background-color:royalblue;
+    padding: 4%;
+    text-align: center;
+    color: white;
+}
+.courses_card i{
+    padding-left: 32%;
+    padding-top: 20%;
+    color:royalblue;
+}
+
+h1{
+    text-align: center;
+    color:deeppink;
+}
+    </style>
+    <link rel="stylesheet" href="css/all_min.css">
+</head>
+<body style="background-color:darkgray;">
+    
+    <!--  -->
+    <div  class="card_section">
+        <div  class="courses_card"> <a href="#">Text Align</a>
+            <ul>
+                <li onclick="document.getElementById('change').style.textAlign='left'">Left</li>
+                <li onclick="document.getElementById('change').style.textAlign='center'">Center</li>
+                <li onclick="document.getElementById('change').style.textAlign='right'">Right</li>
+                <li onclick="document.getElementById('change').style.textAlign='Justify'">Justify</li>
+            </ul>
+        </div>
+        <div class="courses_card"> <a href="#">Text Transformation</a> 
+            <ul>
+                <li onclick="document.getElementById('change').style.textTransform='uppercase'">Upper</li>
+                <li onclick="document.getElementById('change').style.textTransform='lowercase'">Lower</li>
+                <li onclick="document.getElementById('change').style.textTransform='captitalise'">Captitalise</li>
+            </ul>
+        </div>
+        <div class="courses_card"> <a href="#">Text Decoration</a> 
+            <ul>
+                <li onclick="document.getElementById('change').style.textDecoration='UnderLine'">UnderLine</li>
+                <li onclick="document.getElementById('change').style.textDecoration='overLine'">OverLine</li>
+                <li onclick="document.getElementById('change').style.textDecoration='lineThrough'">Line Through</li>
+            </ul>
+        </div>
+        <div class="courses_card"> <a href="#">Text Indentation</a> </div> 
+        <div class="courses_card"> <a href="#">Letter Spacing</a> 
+            <ul>
+                <li onclick="document.getElementById('change').style.letterSpacing='2px'">Spacing ( 2px )</li>
+                <li onclick="document.getElementById('change').style.letterSpacing='4px'">Spacing ( 4px )</li>
+            </ul>
+        </div>  
+        <div class="courses_card"> <a href="#">Line Height</a> 
+            <ul>
+                <li onclick="document.getElementById('change').style.lineHeight='40px'">Height ( 30px )</li>
+                <li onclick="document.getElementById('change').style.lineHeight='21px'">Height ( none )</li>
+            </ul></div>
+        <div class="courses_card"> <a href="#">Text Direction</a>
+            <ul>
+                <li onclick="document.getElementById('change').style.textDirection='rtl'">Right  (rtl)</li>
+                <li>Left   (ltr)</li>
+            </ul>
+        </div>
+        <div class="courses_card"> <a href="#">Text Shadow</a> 
+            <ul>
+                <li onclick="document.getElementById('change').style.textShadow='3px 1px blue'">Text Shadow</li>
+            </ul>
+        </div>
+        <div class="courses_card"> <a href="#">Text Background</a> 
+        <ul><li onclick="document.getElementById('change').style.backgroundColor='teal'">color(teal)</li>
+            <li onclick="document.getElementById('change').style.backgroundColor='yellow'">color(yellow)</li></ul>
+        </div>
+        <div class="courses_card"> <a href="#">Text Color</a>
+            <div class="paint_box">
+                <div style="background-color: blue;" class="small_boxes fl" onclick="document.getElementById('change').style.color='blue'"></div>
+                <div  style="background-color:aqua;"class="small_boxes new" onclick="document.getElementById('change').style.color='aqua'"></div>
+                <div style="background-color:green;"class="small_boxes new" onclick="document.getElementById('change').style.color='green'"></div>
+                <div style="background-color: yellow;" class="small_boxes new" onclick="document.getElementById('change').style.color='yellow'"></div>
+                <div style="background-color: grey;" class="small_boxes new" onclick="document.getElementById('change').style.color='grey'"></div>
+                <div style="background-color:teal;" class="small_boxes new " onclick="document.getElementById('change').style.color='teal'"></div>
+                <div style="background-color:#666600;" class="small_boxes new" onclick="document.getElementById('change').style.color='#666600'"></div>
+                <div style="background-color: #de6262;" class="small_boxes new" onclick="document.getElementById('change').style.color='#de6262'"></div>
+                <div style="background-color: #cbad6d;" class="small_boxes new" onclick="document.getElementById('change').style.color='#cbad6d'"></div>
+                <div style="background-color: #d53369;" class="small_boxes new" onclick="document.getElementById('change').style.color='#d53369'"></div>
+                <div style="background-color: #f857a6;" class="small_boxes new" onclick="document.getElementById('change').style.color='#f857a6'"></div>
+                <div style="background-color: #4b6cb7;" class="small_boxes new" onclick="document.getElementById('change').style.color='#4b6cb7'"></div>
+                <div style="background-color: #ff5858;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ff5858'"></div>
+                <div style="background-color: #0abfbc;" class="small_boxes new" onclick="document.getElementById('change').style.color='#0abfbc'"></div>
+                <div style="background-color: #480048;" class="small_boxes new" onclick="document.getElementById('change').style.color='#480048'"></div>
+                <div style="background-color: #49a09d;" class="small_boxes new" onclick="document.getElementById('change').style.color='#49a09d'"></div>
+                <div style="background-color: #d6a4a4;" class="small_boxes new" onclick="document.getElementById('change').style.color='#d6a4a4'"></div>
+                <div style="background-color: #ffedbc;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ffedbc'"></div>
+                <div style="background-color: #dc2424;" class="small_boxes new" onclick="document.getElementById('change').style.color='#dc2424'"></div>
+                <div style="background-color: #24c6dc;" class="small_boxes new" onclick="document.getElementById('change').style.color='#24c6dc'"></div>
+                <div style="background-color: #283048;" class="small_boxes new" onclick="document.getElementById('change').style.color='#283048'"></div>
+                <div style="background-color: #ffe47a;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ffe47a'"></div>
+                <div style="background-color: #5c258d;" class="small_boxes new" onclick="document.getElementById('change').style.color='#5c258d'"></div>
+                <div style="background-color: #71b280;" class="small_boxes new" onclick="document.getElementById('change').style.color='#71b280'"></div>
+                <div style="background-color: #134e5e;" class="small_boxes new" onclick="document.getElementById('change').style.color='#134e5e'"></div>
+                <div style="background-color: #3a6073;" class="small_boxes new" onclick="document.getElementById('change').style.color='#3a6073'"></div>
+                <div style="background-color: #ff8008;" class="small_boxes new" onclick="document.getElementById('change').style.color='#ff8008'"></div>
+                <div style="background-color: #dd5289;" class="small_boxes new" onclick="document.getElementById('change').style.color='#dd5289'"></div>
+                <!-- <div class="small_boxes fr"></div> -->
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h1>Check Result Here: <i class="fas fa-down fa-2x"></i></h1>
+    <hr>
+    
+    <div class="section">
+    <p id="change">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi natus eveniet velit dolor labore vel dolorem, et pariatur eius accusamus, maxime tenetur nihil similique error? Doloribus, numquam, quia corporis distinctio ipsam commodi quae recusandae quisquam explicabo suscipit laborum saepe incidunt provident officia accusamus enim dolores sequi cupiditate exercitationem! Tenetur, labore?</p>
+    </div>
+<br>
+    <!-- <hr> -->
+ 
+</body>
+</html>
